@@ -4,9 +4,10 @@ body {
     background-image: url("fond.png");
     background-size: 600px ;
     background-repeat: repeat-x ;
-    cursor: url('souris.cur'),auto;
+    cursor: url('souris.cur'),crosshair;
+    cursor: url('souris.cur'),move;
     cursor: url('souris.cur'),pointer;
-    cursor: url('souris.cur'),default;
+    cursor: url('souris.cur'),auto;
       }
 
   h1 {
