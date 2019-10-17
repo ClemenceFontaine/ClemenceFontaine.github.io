@@ -1,14 +1,22 @@
 body {
     font-size: 20px;
-    font-style: certege ;
-    background-image: url("fond.png");
+    background-image: url("../images/fond.png");
     background-size: 600px ;
     background-repeat: repeat-x ;
-    cursor: url('souris.cur'),crosshair;
-    cursor: url('souris.cur'),move;
-    cursor: url('souris.cur'),pointer;
-    cursor: url('souris.cur'),auto;
-      }
+    cursor: url(souris.cur), default;
+    cursor: url(souris.cur), crosshair;
+    cursor: url(souris.cur), move;
+  }
+  
+  @font-face {
+    font-family: 'WonderType-Regular';
+    src: url('../WonderType-Regular.eot');
+    src: url('../WonderType-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../WonderType-Regular.woff') format('woff'),
+         url('../WonderType-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 
   h1 {
     margin-top: 60px;
@@ -173,4 +181,9 @@ a {
   top: 300px;
   left: 100px;
   position: absolute;
+}
+
+input{
+  size: 300PX;
+  font: arial;
 }
