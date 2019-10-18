@@ -9,14 +9,15 @@ body {
   }
   
   @font-face {
-    font-family: 'WonderType-Regular';
-    src: url('../WonderType-Regular.eot');
-    src: url('../WonderType-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../WonderType-Regular.woff') format('woff'),
-         url('../WonderType-Regular.ttf') format('truetype');
+    font-family: 'wondertype';
+    src: url("../font/'wondertype.eot'") format('eot'),
+         url("../font/'wondertype-webfont.woff2'") format('woff2'),
+         url("../font/'wondertype-webfont.woff'") format('woff'),
+         url("../font/'wondertype.otf'") format('truetype');
     font-weight: normal;
     font-style: normal;
-    }
+}
+
 
   h1 {
     margin-top: 60px;
@@ -55,7 +56,7 @@ body {
 
   h5 {
     color:black;
-    opacity: 50;
+    opacity: 40;
     font-size: 30px;
       font-family: 'Sporting Grotesque'; 
       font-weight: normal; 
@@ -65,12 +66,10 @@ body {
  h6 {
    margin-top: 130px;
     color:black;
-    font-size: 20px;
-    opacity: 50%;
+    font-size: 100px; 
     text-align: left;
-      font-family: 'Sporting Grotesque'; 
+      font-family: 'wondertype'; 
       font-weight: normal; 
-      font-style: italic;
  }
  
 
