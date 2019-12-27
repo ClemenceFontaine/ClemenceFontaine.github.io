@@ -71,8 +71,6 @@ body {
       font-family: 'wondertype'; 
       font-weight: normal; 
  }
- 
-
 
 a {
   text-decoration: none;
@@ -181,8 +179,20 @@ a {
   left: 100px;
   position: absolute;
 }
+.video2{
+  top: 400px;
+  right: 200px;
+  position: absolute;
+}
 
-input{
+.grille{
+left: 70px;
+display: grid;  
+grid-auto-rows: 300px;
+position: absolute;
+}
+
+.input{
   size: 300PX;
   font: arial;
 }
