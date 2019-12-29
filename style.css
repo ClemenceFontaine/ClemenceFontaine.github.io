@@ -75,7 +75,16 @@ body {
 a {
   text-decoration: none;
 }
+a:hover{
+b      font-weight: normal; 
+ }
 
+.prenom {
+  text-decoration: none;
+}
+.prenom:hover{
+ text-shadow: rgb(132, 0, 255);
+}
 
 .gauche1 {
   top: 300px;
@@ -185,11 +194,12 @@ a {
   position: absolute;
 }
 
-.grille{
-left: 70px;
-display: grid;  
-grid-auto-rows: 300px;
-position: absolute;
+
+.image:hover {
+	-webkit-transform: scale(2.4);
+  transform: scale(2.4);
+  position: absolute;
+  right: 400px;
 }
 
 .input{
