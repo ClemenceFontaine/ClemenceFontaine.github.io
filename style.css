@@ -79,13 +79,6 @@ a:hover{
 b      font-weight: normal; 
  }
 
-.prenom {
-  text-decoration: none;
-}
-.prenom:hover{
- text-shadow: rgb(132, 0, 255);
-}
-
 .gauche1 {
   top: 300px;
   left:100px;
@@ -196,10 +189,11 @@ b      font-weight: normal;
 
 
 .image:hover {
-	-webkit-transform: scale(2.4);
-  transform: scale(2.4);
-  position: absolute;
-  right: 400px;
+	-webkit-transform: scale(1.2);
+  transform: scale(1.4);
+  translate: (200px, 50%);
+  position: relative;
+  left: 600px;
 }
 
 .input{
