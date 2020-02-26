@@ -6,7 +6,7 @@ body {
     cursor: url(souris.cur), default;
     cursor: url(souris.cur), crosshair;
     cursor: url(souris.cur), move;
-  }
+    -webkit-font-smoothing: antialiased;}
   
   @font-face {
     font-family: 'wondertype';
@@ -15,53 +15,54 @@ body {
          url("../font/'wondertype-webfont.woff'") format('woff'),
          url("../font/'wondertype.otf'") format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal;}
 
   h1 {
-    margin-top: 60px;
-    margin-left: 700px;
-    position: fixed;
-    color:black;
-    opacity: 0.5;
-    font-size: 50px;
-    font-family: 'Sporting Grotesque'; 
-      font-weight: normal; 
-      font-style: bold;
-      text-align: right;
-        }
+    margin-top: 20%;
+    margin-left: 80%;
+    position: fixed;}
 
   h2 {
     color:black;
     font-size: 30px;
     opacity: 50;
     text-align: center;
-    font-family : 'Sporting Grotesque'; 
+    font-family : 'Haas Grot Text'; 
     font-weight: normal;
-  }
+    -webkit-transition: color 0.5s;
+    transition: color 0.3s;
+    display: initial;}
+
+h2:hover {
+  font-style: italic;
+  color: darkgrey;}
+
   h3 {
     color:black;
     font-size: 25px;
     opacity: 50;
-    font-family: 'Sporting Grotesque'; 
+    margin-right:  50% ;
+    margin-left: 2%;
+    font-family: 'Haas Grot Text'; 
     font-weight: normal;
-  }
+    font-style: italic;}
+
   h4 {
     color:black;
     font-size: 20px;
-    font-family: 'Sporting Grotesque'; 
-    font-weight: normal; 
-  }
+    font-family: 'Haas Grot Text'; 
+    font-weight: normal; }
 
   h5 {
+    margin-top: 10%;
+    margin-right:  50% ;
+    margin-left: 2%;
+    margin-block-end: -8%;
     color:black;
-    opacity: 40;
-    font-size: 30px;
-      font-family: 'Sporting Grotesque'; 
+    font-size: 27px;
+      font-family: 'Haas Grot Text'; 
       font-weight: normal; 
-      text-align: right;
-        }
+      text-align: left; }
   
  h6 {
    margin-top: 130px;
@@ -69,123 +70,79 @@ body {
     font-size: 100px; 
     text-align: left;
       font-family: 'wondertype'; 
-      font-weight: normal; 
- }
+      font-weight: normal; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none;}
+
 a:hover{
-b      font-weight: normal; 
- }
+      font-weight: normal; }
 
-.gauche1 {
-  top: 300px;
-  left:100px;
-  position: absolute;
-  }
+ .display{
+   margin-top: 10%;
+   text-align: left;
+  margin-inline-end: 55%;}
 
-.centre1 {
-  top: 350px;
-  left: 500px;
-  position: absolute;
-  }
+.prenom{
+  opacity: 0.4;
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 65%;
+  width: 30%;}
 
-.droite1 {
-  top: 400px;
-  left: 900px;
-  position: absolute;
-  }
+.prenom:hover{
+  opacity: 1;}
 
-.gauche2 {
-  top: 700px;
-  left:100px;
-  position: absolute;
-  }
-  
-.centre2 {
-  top: 750px;
-  left: 500px;
-  position: absolute;
-  }
-  
-.droite2 {
-  top: 800px;
-  left:900px;
-  position: absolute;
-  }
-
-.gauche3 {
-  top: 1100px;
-  left:100px;
-  position: absolute;
-  }
-    
-.centre3 {
-  top: 1150px;
-  left: 500px;
-  position: absolute;
-  }
-    
-.droite3 {
-  top: 1200px;
-  left: 900px;
-  position: absolute;
-  }
-
-.gauche4 {
-  top: 1500px;
-  left:100px;
-  position: absolute;
-  }
-      
-.centre4 {
-  top: 1550px;
-  left: 500px;
-  position: absolute;
-  }
-      
-.droite4 {
-  top: 1600px;
-  left: 900px;
-  position: absolute;
-  }
-
-  
 .haut {
   top: -5px;
   right: 30px;
-  position: absolute;
-  }
+  color: black;
+  position: absolute;}
+
+.haut:hover {
+    font-style: italic;
+    color: darkgrey;}
 
 .haut1 {
   top: 0px;
   right: 110px;
-  position: absolute;
-}
+  color: black;
+  position: absolute;}
+
+.haut1:hover {
+  font-style: italic;
+  color: darkgrey;}
 
 .haut2 {
   top: 0px;
   right: 300px;
-  position: absolute;
-}
+  color: black;
+  position: absolute;}
+
+.haut2:hover {
+  font-style: italic;
+  color: darkgrey;}
 
 .haut3 {
   top: 0px;
   left: 30px;
-  position: absolute;
-}
+  color: black;
+  position: absolute;}
+
+.haut3:hover {
+  font-style: italic;
+  color: darkgrey;}
 
 .video{
   top: 300px;
   left: 100px;
-  position: absolute;
-}
+  color: black;
+  position: absolute;}
+
 .video2{
   top: 400px;
   right: 200px;
-  position: absolute;
-}
+  position: absolute;}
 
 
 .image:hover {
@@ -193,10 +150,8 @@ b      font-weight: normal;
   transform: scale(1.4);
   translate: (200px, 50%);
   position: relative;
-  left: 600px;
-}
+  left: 30%;}
 
 .input{
   size: 300PX;
-  font: arial;
-}
+  font: arial;}
