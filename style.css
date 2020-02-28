@@ -17,8 +17,21 @@ body {
     font-weight: normal;
     font-style: normal;}
 
+    /*@font-face {
+      font-family: 'Typerabelle';
+      src: url("../font/'typerabelle.eot'") format('eot'),
+           url("../font/'typerabelle-webfont.woff2'") format('woff2'),
+           url("../font/'typerabelle-webfont.woff'") format('woff'),
+           url("../font/'typerabelle.otf'") format('truetype');
+      font-weight: normal;
+      font-style: normal;}*/
+  
+   
+
   h1 {
-    margin-top: 20%;
+    z-index: 2;
+    width: 200;
+    margin-top: 5%;
     margin-left: 80%;
     position: fixed;}
 
@@ -35,13 +48,13 @@ body {
 
 h2:hover {
   font-style: italic;
-  color: darkgrey;}
+  color: yellow;}
 
   h3 {
     color:black;
     font-size: 25px;
     opacity: 50;
-    margin-right:  50% ;
+    margin-right:  55% ;
     margin-left: 2%;
     font-family: 'Haas Grot Text'; 
     font-weight: normal;
@@ -55,14 +68,12 @@ h2:hover {
 
   h5 {
     margin-top: 10%;
-    margin-right:  50% ;
-    margin-left: 2%;
-    margin-block-end: -8%;
+    margin-right: 30%;
     color:black;
-    font-size: 27px;
-      font-family: 'Haas Grot Text'; 
-      font-weight: normal; 
-      text-align: left; }
+    font-size: 40px; 
+    text-align: left;
+      font-family: 'Helvetica'; 
+      font-weight: normal;}
   
  h6 {
    margin-top: 130px;
@@ -100,8 +111,7 @@ a:hover{
   position: absolute;}
 
 .haut:hover {
-    font-style: italic;
-    color: darkgrey;}
+    font-style: italic;}
 
 .haut1 {
   top: 0px;
@@ -110,8 +120,7 @@ a:hover{
   position: absolute;}
 
 .haut1:hover {
-  font-style: italic;
-  color: darkgrey;}
+  font-style: italic;}
 
 .haut2 {
   top: 0px;
@@ -120,8 +129,7 @@ a:hover{
   position: absolute;}
 
 .haut2:hover {
-  font-style: italic;
-  color: darkgrey;}
+  font-style: italic;}
 
 .haut3 {
   top: 0px;
@@ -130,8 +138,7 @@ a:hover{
   position: absolute;}
 
 .haut3:hover {
-  font-style: italic;
-  color: darkgrey;}
+  font-style: italic;}
 
 .video{
   top: 300px;
@@ -144,14 +151,13 @@ a:hover{
   right: 200px;
   position: absolute;}
 
+  img {
+    height: auto;
+      padding: 10px;
+    position: relative;}
 
-.image:hover {
-	-webkit-transform: scale(1.2);
-  transform: scale(1.4);
-  translate: (200px, 50%);
-  position: relative;
-  left: 30%;}
-
-.input{
-  size: 300PX;
-  font: arial;}
+.gif{
+  width: 20px;
+  margin-top: 5%;
+  margin-left: 60%;
+}
