@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/png" href="mafavicon.png" />
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
     <title>Clémence Fontaine</title>
 </head>
 
@@ -14,51 +15,51 @@
 
 
 <div class="display">
-   <a href="./page/meteor.html">
+   <a href="./page/meteor.html" pic="../images/preview11.png">
                 <h2>Meteor</h2>
     </a>
 —
-    <a href="./page/confluence.html">
+    <a href="./page/confluence.html" pic="../images/preview4.png">
             <h2>Confluence</h2>
         </a>
 —
-    <a href="./page/doxa.html">
+    <a href="./page/doxa.html" pic="../images/preview9.png">
             <h2>Doxa Scene</h2>
         </a>
 —
-    <a href="./page/kdw.html">
+    <a href="./page/kdw.html" pic="../images/preview5.png">
             <h2>Konigin des Wetter</h2>
           </a>
 —
-      <a href="./page/cnaei.html">
+      <a href="./page/cnaei.html" pic="../images/preview10.png">
             <h2>CNAEI</h2>
         </a>
 —
-    <a href="./page/cassandre.html">
+    <a href="./page/cassandre.html" pic="../images/preview6.png">
             <h2>Enter Cassandre</h2>
         </a>
 —
-    <a href="./page/wonder.html">
+    <a href="./page/wonder.html" pic="../images/preview2.png">
             <h2>Wonder-Type </h2>
         </a>
 —
-    <a href="./page/concept.html">
+    <a href="./page/concept.html" pic="../images/preview1.png">
             <h2>Art Conceptuel</h2>
         </a>
 —
-    <a href="./page/frans.html">
+    <a href="./page/frans.html" pic="../images/preview12.png">
             <h2>Imag-in</h2>
         </a>
 —
-    <a href="./page/vortexte.html">
+    <a href="./page/vortexte.html" pic="../images/preview7.png">
             <h2>Vortexte</h2>
         </a>
 —
-    <a href="./page/memphis.html">
+    <a href="./page/memphis.html" pic="../images/preview8.png">
             <h2>Memphis</h2>
         </a>
 —
-    <a href="./page/typerabelle.html">
+    <a href="./page/typerabelle.html" pic="../images/preview3.png">
             <h2>Typerabelle</h2>
         </a>
 
@@ -94,10 +95,29 @@
 
     <!-- <div class="gif"><img src="../images/indice.gif" ></div> -->
 
+    <div id="preview"></div>
+
     <script>
         var col = ["red", "lime", "blue"];
         var randV = Math.floor(Math.random() * Math.floor(col.length));
         document.body.style.backgroundColor = col[randV];
+
+        $(document).ready(function(){
+
+            $("a",".display").hover(
+                function(){
+                    var url_pic = $(this).attr("pic");
+                    $("#preview").css({ background:"url("+url_pic+")",
+                                        backgroundSize:"contain",
+                                        backgroundRepeat:"no-repeat",
+                                        });
+                },
+                function(){
+                    $("#preview").css({background:"url('')"});
+                }
+            );
+
+        });
     </script>
 
 </body>
