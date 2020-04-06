@@ -70,7 +70,7 @@ h2:hover {
     margin-top: 10%;
     margin-right: 30%;
     color:black;
-    font-size: 40px; 
+    font-size: 35px; 
     text-align: left;
       font-family: 'Helvetica'; 
       font-weight: normal;}
@@ -97,7 +97,7 @@ a:hover{
 .prenom{
   opacity: 0.4;
   position: fixed;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 65%;
   width: 30%;}
 
