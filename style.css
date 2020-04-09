@@ -159,6 +159,7 @@ a:hover{
 .typo {
   margin-top: 10%;
   vertical-align: middle;
+  align-items: center;
 }
 
 #preview{
@@ -181,7 +182,7 @@ a:hover{
 
 h2 {
   color:black;
-  font-size: 30px;
+  font-size: 40px;
   opacity: 50;
   text-align: center;
   font-family : 'Haas Grot Text'; 
@@ -239,60 +240,22 @@ a:hover{
 margin-inline-end: 55%;}
 
 .prenom{
-opacity: 0.4;
+opacity: 1;
 position: fixed;
 margin-top: 60%;
 margin-left: 65%;
 width: 30%;}
 
-.prenom:hover{
-opacity: 1;}
-
-.haut {
-top: -5px;
-right: 30px;
-color: black;
-position: absolute;}
-
-.haut:hover {
-  font-style: italic;}
-
-.haut1 {
-top: 0px;
-right: 110px;
-color: black;
-position: absolute;}
-
-.haut1:hover {
-font-style: italic;}
-
-.haut2 {
-top: 0px;
-right: 300px;
-color: black;
-position: absolute;}
-
-.haut2:hover {
-font-style: italic;}
-
-.haut3 {
-top: 0px;
-left: 30px;
-color: black;
-position: absolute;}
-
-.haut3:hover {
-font-style: italic;}
 
 .video{
 top: 300px;
-left: 100px;
+right: 100px;
 color: black;
 position: absolute;}
 
 .video2{
 top: 400px;
-right: 200px;
+right: 100px;
 position: absolute;}
 
 img {
@@ -303,6 +266,7 @@ img {
 .typo {
 margin-top: 10%;
 vertical-align: middle;
+align-items: center;
 }
 
 #preview{
