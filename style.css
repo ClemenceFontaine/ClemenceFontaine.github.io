@@ -171,14 +171,14 @@ a:hover{
   bottom:20%;
 }
 
-@media all and ( max-device-width : 720px )
+@media all and ( max-width : 830px )
  {
 body {
 width: auto;
 background-color: springgreen;}
 
 h2 {
-  font-size: 30px;}
+  font-size: 35px;}
 
 h5 {
   font-size: 30px;}
