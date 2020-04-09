@@ -171,115 +171,16 @@ a:hover{
   bottom:20%;
 }
 
-@media only screen and (max-width: 600px) {
-
-  body {
-    font-size: 20px;
-    background-image: url("../images/fond2.png");
-    background-size: 600px ;
-    background-repeat: repeat-x ;
-    -webkit-font-smoothing: antialiased;}
-
-  h1 {
-  z-index: 2;
-  width: 200;
-  margin-top: 5%;
-  margin-left: 80%;
-  position: fixed;}
-
+@media all and ( max-device-width : 480px )
+ {
+body {
+width : auto ;
+}
 h2 {
-  color:black;
-  font-size: 40px;
-  opacity: 50;
-  text-align: center;
-  font-family : 'Haas Grot Text'; 
-  font-weight: normal;
-  -webkit-transition: color 0.5s;
-  transition: color 0.3s;
-  display: initial;}
-
-h2:hover {
-font-style: italic;
-color: #4fffa6;}
-
-h3 {
-  color:black;
   font-size: 30px;
-  opacity: 50;
-  margin-right:  55% ;
-  margin-left: 2%;
-  font-family: 'Haas Grot Text'; 
-  font-weight: normal;
-  font-style: italic;}
+  }
+  h5 {
+    font-size: 30px; 
+    }
 
-h4 {
-  color:black;
-  font-size: 20px;
-  font-family: 'Haas Grot Text'; 
-  font-weight: normal; }
-
-h5 {
-  margin-top: 10%;
-  margin-right: 30%;
-  color:black;
-  font-size: 25px; 
-  text-align: left;
-    font-family: 'Helvetica'; 
-    font-weight: normal;}
-
-h6 {
- margin-top: 130px;
-  color:black;
-  font-size: 100px; 
-  text-align: left;
-    font-family: 'wondertype'; 
-    font-weight: normal;}
-
-a {
-text-decoration: none;}
-
-a:hover{
-    font-weight: normal; }
-
-.display{
- margin-top: 10%;
- text-align: left;
-margin-inline-end: 55%;}
-
-.prenom{
-opacity: 1;
-position: fixed;
-margin-top: 60%;
-margin-left: 65%;
-width: 30%;}
-
-
-.video{
-top: 300px;
-right: 100px;
-color: black;
-position: absolute;}
-
-.video2{
-top: 400px;
-right: 100px;
-position: absolute;}
-
-img {
-  height: auto;
-    padding: 10px;
-  position: relative;}
-
-.typo {
-margin-top: 10%;
-vertical-align: middle;
-align-items: center;}
-
-#preview{
-width:400px;
-height:400px;
-display: block;
-position: absolute;
-right:20%;
-bottom:20%;}
 }
