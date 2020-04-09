@@ -32,7 +32,7 @@ body {
     z-index: 2;
     width: 200;
     margin-top: 5%;
-    margin-left: 86%;
+    right: 0px;
     position: fixed;}
 
   h2 {
@@ -171,16 +171,18 @@ a:hover{
   bottom:20%;
 }
 
-@media all and ( max-device-width : 1280px )
+@media all and ( max-device-width : 830px )
  {
 body {
-width : auto ;
-}
+width: auto;}
+
 h2 {
-  font-size: 30px;
-  }
-  h5 {
-    font-size: 30px; 
-    }
+  font-size: 30px;}
+
+h5 {
+  font-size: 30px;}
+
+h4 {
+  font-size: 30px;}
 
 }
