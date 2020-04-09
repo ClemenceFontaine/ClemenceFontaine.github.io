@@ -174,7 +174,8 @@ a:hover{
 @media all and ( max-device-width : 720px )
  {
 body {
-width: auto;}
+width: auto;
+background-color: springgreen;}
 
 h2 {
   font-size: 30px;}
@@ -184,5 +185,8 @@ h5 {
 
 h4 {
   font-size: 30px;}
+
+h3 {
+  font-size: 25px;}
 
 }
