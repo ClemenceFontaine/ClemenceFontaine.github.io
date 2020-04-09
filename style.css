@@ -97,9 +97,9 @@ a:hover{
 .prenom{
   opacity: 0.4;
   position: fixed;
-  margin-top: 15%;
-  margin-left: 65%;
-  width: 30%;}
+  top: 65%;
+  right: 30px;
+  width: 400px;}
 
 .prenom:hover{
   opacity: 1;}
@@ -171,7 +171,7 @@ a:hover{
   bottom:20%;
 }
 
-@media all and ( max-device-width : 830px )
+@media all and ( max-device-width : 1280px )
  {
 body {
 width : auto ;
