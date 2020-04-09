@@ -171,8 +171,8 @@ a:hover{
   bottom:20%;
 }
 
-@media all and ( max-width : 830px )
- {
+@media screen and (max-width: 830px){
+ 
 body {
 width: auto;
 background-color: springgreen;}
