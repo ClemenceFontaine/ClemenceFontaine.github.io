@@ -1,6 +1,6 @@
 body {
     font-size: 20px;
-    background-image: url("../images/fond.png");
+    background-image: url("../images/fond2.png");
     background-size: 600px ;
     background-repeat: repeat-x ;
     cursor: url(souris.cur), default;
@@ -48,7 +48,7 @@ body {
 
 h2:hover {
   font-style: italic;
-  color: yellow;}
+  color: #4fffa6;}
 
   h3 {
     color:black;
@@ -81,7 +81,7 @@ h2:hover {
     font-size: 100px; 
     text-align: left;
       font-family: 'wondertype'; 
-      font-weight: normal; }
+      font-weight: normal;}
 
 a {
   text-decoration: none;}
@@ -156,10 +156,9 @@ a:hover{
       padding: 10px;
     position: relative;}
 
-.gif{
-  width: 20px;
-  margin-top: 5%;
-  margin-left: 60%;
+.typo {
+  margin-top: 10%;
+  vertical-align: middle;
 }
 
 #preview{
