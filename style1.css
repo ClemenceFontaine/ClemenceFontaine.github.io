@@ -19,7 +19,7 @@ body {
   h2 {
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'arial';
     font-style: normal;
     position: relative;}
@@ -63,7 +63,7 @@ body {
   .tableau { 
     position: absolute;
     top: 49%;
-    left: 4%;
+    left: 12%;
     margin:10px; 
     padding:5px; 
     width: 90%; 
@@ -84,12 +84,14 @@ td{
   border-style: dashed;
   padding: 0px;
   text-align: center;
-  font-family: 'helvetica';
+  font-family: 'arial';
+    font-style: normal;
 }
 
 th {
   color: blue;
-  font-family: 'helvetica';
+  font-family: 'arial';
+    font-style: bold;
   border: 2px black;
   border-style: dashed;
   padding: 10px;
