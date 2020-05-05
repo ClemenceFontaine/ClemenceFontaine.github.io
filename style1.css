@@ -1,16 +1,16 @@
 body {
-  background-image: radial-gradient(dodgerblue, white);
+  background-image: repeating-linear-gradient(to left, whitesmoke,rgb(86, 134, 223), whitesmoke);
     font-size: 20px;
     background-size: cover ;
     background-repeat: round ;
     -webkit-font-smoothing: antialiased;
-    height: 100%}
+    height: 100%;}
 
   
   h1 {
     margin-top: 2%;
-    right: 5%;
-    text-align: right;
+    left: 10%;
+    text-align: left;
     font-size: 40px;
     font-family: 'arial';
     font-style: normal;
@@ -29,10 +29,7 @@ body {
       color: blue; /*ça reste un exemple*/
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+
   
   html, body {
     height: 100%;
@@ -41,7 +38,7 @@ body {
   .intro { 
     position: absolute;
     top: 10%;
-    right: 10%;
+    left: 12%;
     margin:20px; 
     padding:5px; 
     width: 40%; 
@@ -76,7 +73,7 @@ body {
 
 table{
   border-collapse: collapse;
-  color: black;
+  color: blue;
 }
 
 td{
@@ -89,7 +86,7 @@ td{
 }
 
 th {
-  color: blue;
+  color: black;
   font-family: 'arial';
     font-style: bold;
   border: 2px black;
@@ -100,7 +97,7 @@ th {
   .photo { 
     position: absolute;
     top: -2%;
-    left: 3%;
+    right: 10%;
     margin:25px; 
     padding:10px; 
     width: 30%; 
