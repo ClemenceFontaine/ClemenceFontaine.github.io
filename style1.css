@@ -1,48 +1,56 @@
 body {
-  background-image: repeating-linear-gradient(to left, whitesmoke,rgb(86, 134, 223), whitesmoke);
+  background-color: white;
     font-size: 20px;
-    background-size: cover ;
-    background-repeat: round ;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;}
+    display : absolute;
+  width: 100%;
+  background-size: 600px ;
+  cursor: cell;
+  -webkit-font-smoothing: antialiased;}
 
-  
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow:hidden;
+    }
+
+    footer {position: absolute; bottom: 0;}
+    .header {
+      position:fixed;
+      height:100px;
+      top:0;
+      left:0;
+      right:0;
+   }
+   
   h1 {
-    margin-top: 2%;
-    left: 10%;
+    top: 0%;
+    left: 2%;
     text-align: left;
     font-size: 40px;
-    font-family: 'arial';
+    font-family: 'concern';
     font-style: normal;
-    position: relative;}
+    position: relative;
+  color: blue;}
 
   h2 {
     text-align: left;
-    color: black;
+    color: limegreen;
     font-size: 18px;
-    font-family: 'arial';
+    font-family: 'concern';
     font-style: normal;
     position: relative;}
 
-    a {
-      text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
-      color: blue; /*ça reste un exemple*/
-  }
-
-
-  
-  html, body {
-    height: 100%;
-  }
 
   .intro { 
+    cursor: s-resize;
     position: absolute;
-    top: 10%;
-    left: 12%;
+    top: 8%;
+    left: 2%;
     margin:20px; 
     padding:5px; 
-    width: 40%; 
-    height:34%; 
+    width: 25%; 
+    height:42%;  
     overflow: auto; 
     text-align:justify; 
     flex-wrap: wrap;
@@ -50,21 +58,22 @@ body {
 
 .word{ 
   opacity: 1;
-  color: blue;
+  text-decoration: underline;
   display: initial;
   }
   .word:hover{
-    color: green;
+    color: blue;
   }
 
   .tableau { 
+    cursor: ns-resize;
     position: absolute;
-    top: 49%;
-    left: 12%;
+    top: 2%;
+    left: 30%;
     margin:10px; 
     padding:5px; 
-    width: 90%; 
-    height:45%; 
+    width: 80%; 
+    height:50%; 
     overflow: auto; 
     text-align:center; 
     flex-wrap: wrap;
@@ -77,33 +86,60 @@ table{
 }
 
 td{
-  border: 2px black;
-  border-style: dashed;
+  border: 2px limegreen;
+  border-style: solid;
   padding: 0px;
   text-align: center;
-  font-family: 'arial';
+  font-family: 'concern';
     font-style: normal;
 }
 
 th {
-  color: black;
-  font-family: 'arial';
+  color: limegreen;
+  font-family: 'concern';
     font-style: bold;
-  border: 2px black;
-  border-style: dashed;
+  border: 2px limegreen;
+  border-style: solid;
   padding: 10px;
   }
 
   .photo { 
+    cursor: e-resize;
     position: absolute;
-    top: -2%;
-    right: 10%;
+    top: 52%;
+    right: 1%;
     margin:25px; 
     padding:10px; 
-    width: 30%; 
-    height:46%; 
+    width: 40%; 
+    height:40%; 
     overflow: auto; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
 } 
+
+.infobulle {
+  position: relative;  /* les .infobulle deviennent référents */
+  cursor: cell;
+}
+
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  font-size: 15px;
+  font-style: italic;
+  width: 400px;
+  color: blue;
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: fixed;
+  column-count: 2;
+  top: 56%;
+  left: 3.5%;
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: normal;  /* on interdit le retour à la ligne */
+}
+
+.video{
+  margin-left :37%;
+  margin-top: 25.7%;
+}
