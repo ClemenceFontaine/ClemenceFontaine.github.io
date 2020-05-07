@@ -151,33 +151,38 @@ th {
   
 }
 
-@media screen and (max-width: 480px){
-  
+@media screen and (max-width: 830px){
+
+
+  html, body {
+    overflow: auto;
+  }
+
+h1{
+  left: 10%;
+}
+
   .intro { 
-    cursor: s-resize;
     position: absolute;
-    top: 8%;
+    top: 60%;
     left: 0%;
     margin:20px; 
     padding:5px; 
-    width: 100%; 
+    width: 90%; 
     height:42%;  
-    overflow: auto; 
-    text-align:justify; 
-    flex-wrap: wrap;
 } 
 
 .infobulle:hover::after,
 .infobulle:focus::after {
   font-size: 15px;
   font-style: italic;
-  width: 400px;
+  width: 150px;
   color: blue;
   content: attr(aria-label);  /* on affiche aria-label */
-  position: fixed;
-  column-count: 2;
-  top: 20%;
-  left: 0%;
+  position: initial;
+  column-count: 1;
+  top: 65%;
+  left: 70%;
   z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
   white-space: normal;  /* on interdit le retour à la ligne */
 }
@@ -185,11 +190,11 @@ th {
 .tableau { 
   cursor: ns-resize;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 0%;
   margin:10px; 
   padding:5px; 
-  width: 100%; 
+  width: 90%; 
   height:50%; 
   overflow: auto; 
   text-align:center; 
@@ -197,10 +202,8 @@ th {
 } 
 
 .video{
-  cursor: cell;
-  position: absolute;
   left :0%;
-  top: 50%;
+  top: 105%;
   margin:25px; 
   padding:10px; 
   width: 40%; 
@@ -209,18 +212,12 @@ th {
 }
 
 .photo { 
-  cursor: e-resize;
-  position: absolute;
-  top: 55%;
+  top: 105%;
   right: 0%;
   margin:25px; 
   padding:10px; 
   width: 40%; 
   height:40%; 
-  overflow: auto; 
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
 } 
 
 
