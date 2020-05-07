@@ -111,11 +111,10 @@ th {
     margin:25px; 
     padding:10px; 
     width: 40%; 
-    height:40%; 
-    overflow: auto; 
-    display: flex;
+    height:auto; 
+    overflow: scroll; 
+    display: inline-flex;
     flex-direction: row;
-    justify-content: start;
 } 
 
 .infobulle {
