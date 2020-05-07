@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "concern";
+  src: url("./font/Concern.otf");
+}
+
 body {
   background-color: white;
     font-size: 20px;
@@ -27,10 +32,10 @@ body {
     top: 0%;
     left: 2%;
     text-align: left;
-    font-size: 40px;
+    font-size: 2em;
     font-family: 'concern';
     font-style: normal;
-    position: relative;
+    position: absolute;
   color: blue;}
 
   h2 {
@@ -50,7 +55,7 @@ body {
     margin:20px; 
     padding:5px; 
     width: 25%; 
-    height:42%;  
+    height:42%; 
     overflow: auto; 
     text-align:justify; 
     flex-wrap: wrap;
