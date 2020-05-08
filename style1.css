@@ -35,7 +35,7 @@ body {
     font-size: 2em;
     font-family: 'concern';
     font-style: normal;
-    position: absolute;
+    position: relative;
   color: blue;}
 
   h2 {
@@ -93,7 +93,7 @@ table{
 td{
   border: 2px limegreen;
   border-style: solid;
-  padding: 0px;
+  padding:0px;
   text-align: center;
   font-family: 'concern';
     font-style: normal;
@@ -168,7 +168,7 @@ h1{
 
   .intro { 
     position: absolute;
-    top: 60%;
+    top: 100%;
     left: 0%;
     margin:20px; 
     padding:5px; 
@@ -194,12 +194,12 @@ h1{
 .tableau { 
   cursor: ns-resize;
   position: absolute;
-  top: 10%;
+  top: 17%;
   left: 0%;
   margin:10px; 
   padding:5px; 
   width: 90%; 
-  height:50%; 
+  height:80%; 
   overflow: auto; 
   text-align:center; 
   flex-wrap: wrap;
@@ -207,21 +207,21 @@ h1{
 
 .video{
   left :0%;
-  top: 105%;
+  top: 150%;
   margin:25px; 
   padding:10px; 
   width: 40%; 
-  height:40%; 
+  height:auto; 
   
 }
 
 .photo { 
-  top: 105%;
+  top: 150%;
   right: 0%;
   margin:25px; 
   padding:10px; 
   width: 40%; 
-  height:40%; 
+  height:auto; 
 } 
 
 
