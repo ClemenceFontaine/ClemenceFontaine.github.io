@@ -155,7 +155,7 @@ th {
   
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
 
   html, body {
@@ -168,7 +168,7 @@ h1{
 
   .intro { 
     position: absolute;
-    top: 100%;
+    top: 8%;
     left: 0%;
     margin:20px; 
     padding:5px; 
@@ -194,7 +194,7 @@ h1{
 .tableau { 
   cursor: ns-resize;
   position: absolute;
-  top: 17%;
+  top: 100%;
   left: 0%;
   margin:10px; 
   padding:5px; 
@@ -206,8 +206,8 @@ h1{
 } 
 
 .video{
-  left :0%;
-  top: 150%;
+  left :5%;
+  top: 53%;
   margin:25px; 
   padding:10px; 
   width: 40%; 
@@ -216,7 +216,7 @@ h1{
 }
 
 .photo { 
-  top: 150%;
+  top: 53%;
   right: 0%;
   margin:25px; 
   padding:10px; 
