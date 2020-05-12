@@ -1,233 +1,269 @@
 @font-face {
-  font-family: "concern";
-  src: url("./font/Concern.otf");
+    font-family: "concern";
+    src: url("./font/Concern.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: white;
-    font-size: 20px;
-    display : absolute;
-  width: 100%;
-  background-size: 600px ;
-  cursor: cell;
-  -webkit-font-smoothing: antialiased;}
-
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow:hidden;
-    }
-
-    footer {position: absolute; bottom: 0;}
-    .header {
-      position:fixed;
-      height:100px;
-      top:0;
-      left:0;
-      right:0;
-   }
-   
-  h1 {
-    top: 0%;
-    left: 2%;
-    text-align: left;
-    font-size: 40px;
-    font-family: 'concern';
-    font-style: normal;
-    position: relative;
-  color: blue;}
-
-  h2 {
-    text-align: left;
-    color: limegreen;
-    font-size: 18px;
-    font-family: 'concern';
-    font-style: normal;
-    position: relative;}
-
-
-  .intro { 
-    cursor: s-resize;
-    position: absolute;
-    top: 8%;
-    left: 2%;
-    margin:20px; 
-    padding:5px; 
-    width: 25%; 
-    height:42%; 
-    overflow: auto; 
-    text-align:justify; 
-    flex-wrap: wrap;
-} 
-
-.word{ 
-  opacity: 1;
-  text-decoration: underline;
-  display: initial;
-  }
-  .word:hover{
-    color: blue;
-  }
-
-  .tableau { 
-    cursor: ns-resize;
-    position: absolute;
-    top: 2%;
-    left: 30%;
-    margin:10px; 
-    padding:5px; 
-    width: 80%; 
-    height:50%; 
-    overflow: auto; 
-    text-align:center; 
-    flex-wrap: wrap;
-} 
-
-
-table{
-  border-collapse: collapse;
-  color: blue;
+    font-size: 12px;
+    cursor: cell;
+    -webkit-font-smoothing: antialiased;
 }
 
-td{
-  border: 2px limegreen;
-  border-style: solid;
-  padding:0px;
-  text-align: center;
-  font-family: 'concern';
+
+
+footer {
+    bottom: 0;
+}
+
+
+h1 {
+    font-size: 4em;
+    font-family: 'concern';
     font-style: normal;
+    color: blue;
+    line-height: 1em;
+}
+
+h2 {
+    color: limegreen;
+    font-size: 1.1em;
+    line-height: 1.25em;
+    font-family: 'concern';
+    font-style: normal;
+    padding: 10px 10px 0 0;
+}
+
+#a {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100vw;
+    border-bottom: 4px solid blue;
+}
+
+.intro {
+    flex: auto;
+    cursor: s-resize;
+    width: 25%;
+    height: 60vh;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 1em 0 1em 1em;
+
+}
+
+table {
+    border-collapse: collapse;
+    color: blue;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+td {
+    border: 2px solid limegreen;
+    text-align: center;
+    font-family: 'concern';
+    font-style: normal;
+    font-size: 1.1em;
 }
 
 th {
-  color: limegreen;
-  font-family: 'concern';
+    color: limegreen;
+    font-family: 'concern';
+    font-size: 1.2em;
     font-style: bold;
-  border: 2px limegreen;
-  border-style: solid;
-  padding: 10px;
-  }
+    border: 2px limegreen;
+    border-style: solid;
+    padding: 10px;
+}
 
-  .photo { 
-    cursor: e-resize;
-    position: absolute;
-    top: 52%;
-    right: 1%;
-    margin:25px; 
-    padding:10px; 
-    width: 40%; 
-    height:auto; 
-    overflow: scroll; 
-    display: inline-flex;
+th:hover {
+    background: limegreen;
+    color: white;
+}
+
+.tableau {
+    flex: auto;
+    cursor: ns-resize;
+    padding: 1em 1em 1em 1em;
+    width: 75%;
+    height: 60vh;
+    overflow: scroll;
+    text-align: center;
+}
+
+.p {
+    width: 10rem;
+
+}
+
+td img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.word {
+    opacity: 1;
+    text-decoration: underline;
+    display: initial;
+}
+
+.word:hover {
+    color: blue;
+}
+
+#b {
+    display: flex;
     flex-direction: row;
-} 
+    width: 100vw;
+}
+
+#whitespace {
+    min-width: 25vw;
+    // background-color: red;
+}
+
 
 .infobulle {
-  position: relative;  /* les .infobulle deviennent référents */
-  cursor: cell;
+    /* les .infobulle deviennent référents */
+    cursor: cell;
 }
 
 
 .infobulle:hover::after,
 .infobulle:focus::after {
-  font-size: 15px;
-  font-style: italic;
-  width: 400px;
-  color: blue;
-  content: attr(aria-label);  /* on affiche aria-label */
-  position: fixed;
-  column-count: 2;
-  top: 56%;
-  left: 3.5%;
-  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
-  white-space: normal;  /* on interdit le retour à la ligne */
-}
-
-.video{
-  cursor: cell;
-  position: absolute;
-  left :35.5%;
-  top: 52%;
-  margin:25px; 
-  padding:10px; 
-  width: 40%; 
-  height:40%; 
-  
-}
-
-@media only screen and (max-width: 40em) {
-
-
-  html, body {
-    overflow: auto;
-  }
-
-h1{
-  left: 5%;
-  font-size: 30px;
-}
-
-  .intro { 
     position: absolute;
-    top: 8%;
-    left: 0%;
-    margin:20px; 
-    padding:5px; 
-    width: 90%; 
-    height:42%;  
-} 
-
-.infobulle:hover::after,
-.infobulle:focus::after {
-  font-size: 15px;
-  font-style: italic;
-  width: 150px;
-  color: blue;
-  content: attr(aria-label);  /* on affiche aria-label */
-  position: initial;
-  column-count: 1;
-  top: 65%;
-  left: 70%;
-  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
-  white-space: normal;  /* on interdit le retour à la ligne */
+    font-size: 0.8em;
+    font-style: italic;
+    width: 22vw;
+    color: blue;
+    content: attr(aria-label);
+    /* on affiche aria-label */
+    column-count: 2;
+    top: 66%;
+    left: 1%;
+    z-index: 1;
+    text-align: left;
+    /* pour s'afficher au dessus des éléments en position relative */
+    white-space: normal;
+    /* on interdit le retour à la ligne */
 }
 
-.tableau { 
-  cursor: ns-resize;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  margin:10px; 
-  padding:5px; 
-  width: 90%; 
-  height:40%; 
-  overflow: auto; 
-  text-align:center; 
-  flex-wrap: wrap;
-} 
-
-.video{
-  left :2%;
-  top: 46%;
-  margin:25px; 
-  padding:40px; 
-  width: 40%; 
-  height:auto;
-
-  
+.video {
+    width: 40vw;
+    padding-left: 1em;
 }
 
-.photo { 
-  top: 140%;
-  right: 0%;
-  margin:25px; 
-  padding:10px; 
-  width: 90%; 
-  height:auto; 
-} 
+video {
+    height: 40vh;
+    width: auto;
+    border: 1px dotted limegreen;
 
-th {
-  padding: 2px;
-  }
 
+}
+
+.photo {
+    flex: auto;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.photo img {
+    justify-content: space-between;
+    width: auto;
+    height: 20vh;
+    max-height: 100%;
+    border: 1px dotted limegreen;
+    flex-wrap:wrap;
+}
+
+
+div.intro::-webkit-scrollbar,
+div.tableau::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 4px;
+
+
+}
+
+div.intro::-webkit-scrollbar-thumb,
+div.tableau::-webkit-scrollbar-thumb {
+
+    background-color: blue;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #a,
+    #b {
+        flex-direction: column;
+        padding: 0;
+        border: 0;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 1em;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .tableau {
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .video {
+        padding: 1em;
+        justify-content: center;
+    }
+
+    video {
+       width: 80vw;
+        height: auto;
+
+    }
+
+    .photo {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo img {
+        padding-bottom: 2em;
+        width: 80vw;
+        max-width: 60%;
+        height: auto;
+    }
+
+    th {
+        padding: 1.2em;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    // Mobile styles here
+}
+
+@media (min-width: 600px) {
+    // Desktop styles here
 }
