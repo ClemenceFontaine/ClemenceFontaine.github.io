@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "concern";
+    src: url("./font/Concern.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    cursor: cell;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer {
+    bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'concern';
+    font-style: normal;
+    color: blue;
+    text-align: right;
+    line-height: 0.8em;
+    padding-right: 5px;
+}
+
+h2 {
+    color: limegreen;
+    font-size: 1.1em;
+    line-height: 1.25em;
+    font-family: 'concern';
+    font-style: normal;
+    padding: 5px 5px 0 0;
+}
+
+#a {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100vw;
+    border-bottom: 4px solid limegreen;
+}
+
+.intro {
+    flex: auto;
+    cursor: s-resize;
+    width: 25%;
+    height: 60vh;
+    overflow-y: scroll;
+    text-align: justify;
+    padding: 1em 0 1em 1em;
+
+}
+
+table {
+    border-collapse: collapse;
+    color: blue;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+td {
+    border: 2px solid limegreen;
+    text-align: center;
+    font-family: 'concern';
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+th {
+    color: limegreen;
+    font-family: 'concern';
+    font-size: 1.2em;
+    font-style: bold;
+    border: 2px limegreen;
+    border-style: solid;
+    padding: 10px;
+}
+
+th:hover {
+    background: limegreen;
+    color: white;
+}
+
+.tableau {
+    flex: auto;
+    cursor: ns-resize;
+    padding: 1em 1em 1em 1em;
+    width: 75%;
+    height: 60vh;
+    overflow: scroll;
+    text-align: center;
+}
+
+.p {
+    width: 10rem;
+
+}
+
+td img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.word {
+    opacity: 1;
+    text-decoration: underline;
+    display: initial;
+}
+
+.word:hover {
+    color: blue;
+}
+
+#b {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#whitespace {
+    min-width: 25vw;
+    // background-color: red;
+}
+
+
+.infobulle {
+    /* les .infobulle deviennent référents */
+    cursor: cell;
+}
+
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+    position: absolute;
+    font-size: 0.9em;
+    font-style: italic;
+    width: 22vw;
+    color: blue;
+    content: attr(aria-label);
+    /* on affiche aria-label */
+    column-count: 2;
+    top: 62%;
+    left: 0;
+    z-index: 1;
+    text-align: left;
+    /* pour s'afficher au dessus des éléments en position relative */
+    white-space: normal;
+    /* on interdit le retour à la ligne */
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border: 1px dotted limegreen;
+}
+
+.video {
+    width: 40vw;
+    padding-left: 1em;
+}
+
+video {
+    height: 40vh;
+    width: auto;
+    border: 1px dotted limegreen;
+
+
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 1em;
+}
+
+.photo img {
+    justify-content: space-between;
+    width: auto;
+    height: 20vh;
+    max-height: 100%;
+    border: 1px dotted limegreen;
+    margin-left: 0.4em;
+
+}
+
+
+div.intro::-webkit-scrollbar,
+div.tableau::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 4px;
+
+
+}
+
+div.intro::-webkit-scrollbar-thumb,
+div.tableau::-webkit-scrollbar-thumb {
+
+    background-color: blue;
+
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+
+@media only screen and (max-width: 1000px) {
+
+
+    h1 {
+        font-size: 4.2em;
+    }
+
+    h2 {
+        column-count: 2;
+
+    }
+
+    #a,
+    #b {
+        flex-direction: column;
+        padding: 0;
+        border: 0;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 1em 1em 0.5em 1em;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .tableau {
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+            padding: 0.5em 1em;
+
+    }
+
+    .video {
+        padding: 1em;
+    }
+
+    video {
+        height: 80vh;
+        width: auto;
+    }
+
+    .photo {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            justify-content: space-between;
+
+    }
+
+    .photo img {
+        margin: 0 0 1.5em 0;
+        width: 30vw;
+        height: auto;
+    }
+
+    th {
+        padding: 1.2em;
+    }
+
+    .infobulle:hover::after,
+    .infobulle:focus::after {
+        font-size: 1em;
+        font-style: italic;
+        background-color: white;
+        width: 90vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px)  {
+     h2 {
+        column-count: 1;
+         padding-bottom: 0;
+}
+      .photo img {
+        margin: 0 0 1em 0;
+        width: 45vw;
+        height: auto;
+    }
+}
+
