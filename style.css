@@ -44,7 +44,8 @@ body {
     font-weight: normal;
     -webkit-transition: color 0.5s;
     transition: color 0.3s;
-    display: initial;}
+    display: initial;
+    hyphens: none;}
 
 h2:hover {
   font-style: italic;
@@ -92,7 +93,8 @@ a:hover{
  .display{
    margin-top: 10%;
    text-align: left;
-  margin-inline-end: 55%;}
+  margin-inline-end: 55%;
+}
 
 .prenom{
   opacity: 0.4;
