@@ -348,13 +348,9 @@ cursor: pointer;
 
   }
 
-  .video {
-      padding: 1em;
-  }
-
   video {
-      height: 80vh;
-      width: auto;
+      height: auto;
+      width: 480px;
   }
 
   .photo {
