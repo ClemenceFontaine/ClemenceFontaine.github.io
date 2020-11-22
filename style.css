@@ -122,8 +122,8 @@ a:link
   height: 60vh;
   overflow-y: scroll;
   padding: 1em 20em 1em 1em;
-
 }
+
 .taffe a span {
   display:none;
   }
@@ -132,6 +132,7 @@ a:link
   display:block;
   margin:0 0 0 0;
   }
+
 table {
   border-collapse: collapse;
   color: red;
@@ -224,30 +225,32 @@ video {
   flex-wrap: wrap;
 }
 
+/* Flou */
 .photo img {
   justify-content: center;
   width: auto;
-  height: 15vh;
+  height: 13vh;
   max-height: 100%;
   border: 1px dotted red;
-
+  -webkit-filter: blur(0);
+	filter: blur(0);
 }
 
+.photo :hover img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
 
 div.intro::-webkit-scrollbar,
 div.tableau::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 4px;
   height: 4px;
-
-
 }
 
 div.intro::-webkit-scrollbar-thumb,
 div.tableau::-webkit-scrollbar-thumb {
-
   background-color: red;
-
 }
 
 
