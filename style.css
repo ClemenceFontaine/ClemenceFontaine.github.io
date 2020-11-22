@@ -229,7 +229,7 @@ video {
 .photo img {
   justify-content: center;
   width: auto;
-  height: 12vh;
+  height: 13vh;
   max-height: 100%;
   border: 1px dotted red;
   -webkit-filter: blur(0);
