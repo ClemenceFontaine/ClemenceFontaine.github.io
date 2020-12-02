@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "concern";
-  src: url("./font/Concern.otf");
+  font-family: "Ortica";
+  src: url("./font/Ortica-Light.otf");
     font-family: "wondertype";
   src: url('wondertype.eot'); /* IE9 Compat Modes */
   src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -24,10 +24,10 @@ font-family: "typerabelle";
 
 body {
   font-size: 12px;
-  cursor: cell;
   -webkit-font-smoothing: antialiased;
-  background-color: white;
+  cursor: cell;
 }
+
 
 footer {
   bottom: 0;
@@ -35,71 +35,74 @@ footer {
 
 h1 {
   font-size: 4em;
-  font-family: 'concern';
+  font-family: 'helvetica';
   font-style: normal;
-  color: red;
-  text-align: left;
+  color: white;
+  text-align: center;
   line-height: 0.8em;
-  padding-right: 5px;
-  text-indent: 1em;
 }
 
 h2 {
-  color: red;
-  font-size: 1.3em;
+  color: white;
+  font-size: 2em;
   line-height: 1.25em;
-  font-family: 'concern';
+  font-family: 'helvetica';
   font-style: normal;
-  padding: 5px 5px 0 0;
+  /*padding: 5px 5px 0 0;*/
   text-align: left;
 }
 
 h3 {
-  color: white;
-  text-shadow: 1.5px 1.5px 1.5px red;
-  font-size: 2em;
+  color: orangered;
+  /*text-shadow: 1.5px 1.5px 1.5px green;*/
+  font-size: 3.5em;
   line-height: 1.25em;
-  font-family: 'concern';
+  font-family: 'helvetica';
   font-style: normal;
-  padding: 5px 5px 0 0;
+  padding: 5px 5px 5px 5px;
   text-decoration: none;
 }
 
 h3:hover{
-  color: red;
+  color: black;
 }
 
 /* retour */
 h4{
-  font-family: 'concern';
-  color: red;
-  font-size: 5em;
-  text-align: center;
+  font-family: 'helvetica';
+  font-style: normal;
+  color: orangered;
+  font-size: 3em;
+  text-align: right;
+  padding-right: 2em;
 }
 
 /* légende */
 h5{
-  font-family: 'concern';
-  color: red;
+  font-family: 'helvetica';
+  color: orangered;
   font-size: 1.5em;
-  text-align: right;
-  column-count: 2;
+  text-align: left;
+  padding: 0em 45em 0em 1em;
+}
+h4:hover{
+  text-decoration: underline;
 }
 
 .wonder{
   font-family: 'wondertype';
-  color: red;
-  font-size: 5em;
+  color: orangered;
+  font-size: 8em;
   text-align: left;
   padding: 1em 3em 1em 1em;
 }
 
 .typerabelle{
   font-family: 'typerabelle';
-  color: red;
-  font-size: 7em;
+  color: orangered;
+  font-size: 12em;
   text-align: left;
-  padding: 1em 3em 1em 1em;
+  padding: 0em 0em 0em 0em;
 }
 
 #a {
@@ -107,7 +110,6 @@ h5{
   flex-direction: row;
   height: 100%;
   width: 100vw;
-  border-bottom: 4px solid red;
 }
 
 a:link 
@@ -117,11 +119,11 @@ a:link
 
 .intro {
   flex: auto;
-  cursor: cross;
   width: 5%;
-  height: 60vh;
+  height: 100vh;
   overflow-y: scroll;
-  padding: 1em 20em 1em 1em;
+  padding: 1em 2em 1em 2em;
+  background-color: orangered;
 }
 
 .taffe a span {
@@ -133,28 +135,29 @@ a:link
   margin:0 0 0 0;
   }
 
-table {
-  border-collapse: collapse;
-  color: red;
-  box-sizing: border-box;
-  width: 80%;
-}
+  table {
+    border-collapse: collapse;
+    color: orangered;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
 
 td {
   border: 2px double none;
   text-align: right;
-  font-family: 'concern';
+  font-family: 'helvetica';
   font-style: normal;
   font-size: 1.1em;
 }
 
 th {
-  color: red;
-  font-family: 'concern';
+  color: orangered;
+  font-family: 'helvetica';
   text-align: left ;
-  font-size: 1em;
+  font-size: 1.5em;
   font-style: bold;
-  border: 2px red;
+  border: 2px orangered;
   border-style: none;
   padding: 5px;
 }
@@ -168,10 +171,9 @@ th:hover {
 
 .travaux {
   flex: auto;
-  cursor: ns-resize;
   padding: 1em 1em 1em 1em;
   width: 20%;
-  height: 60vh;
+  height: 100vh;
   overflow: scroll;
   text-align: center;
 }
@@ -194,52 +196,44 @@ td img {
 }
 
 .projet:hover {
-  color: red;
-}
-
-#b {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
+  color: orangered;
 }
 
 #whitespace {
   min-width: 25vw;
-  background-color: red;
+  background-color: none;
 }
 
 .video {
-  width: 40vw;
+  justify-self: center;
   padding-left: 1em;
 }
 
-video {
-  height: 40vh;
-  width: auto;
-  border: 1px dotted red;
-}
 
+ 
 .photo {
-  display: flex;
+  display: run-in;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1em 1em 1em 1em;
 }
 
-/* Flou */
+/*Flou*/
 .photo img {
   justify-content: center;
   width: auto;
-  height: 13vh;
+  height: 30vh;
   max-height: 100%;
-  border: 1px dotted red;
+  border: 1px dotted orangered;
   -webkit-filter: blur(0);
 	filter: blur(0);
 }
 
 .photo :hover img {
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
 }
+
 
 div.intro::-webkit-scrollbar,
 div.tableau::-webkit-scrollbar {
@@ -250,9 +244,8 @@ div.tableau::-webkit-scrollbar {
 
 div.intro::-webkit-scrollbar-thumb,
 div.tableau::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: orangered;
 }
-
 
 
 /* The Modal (background) */
@@ -388,4 +381,3 @@ cursor: pointer;
       width: 45vw;
       height: auto;
 }
-
