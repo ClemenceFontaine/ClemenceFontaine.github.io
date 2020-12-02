@@ -372,9 +372,21 @@ cursor: pointer;
 
 
 @media only screen and (max-width: 600px)  {
-   h2 {
+  h1{
+    color: orangered;
+    font-size: 3em;
+  } 
+  h2 {
+     color: orangered;
       column-count: 1;
        padding-bottom: 0;
+       font-size: 1.5em;
+}
+.intro{
+  background-color: white;
+}
+h3{
+  font-size: 2em;
 }
     .photo img {
       margin: 0 0 1em 0;
