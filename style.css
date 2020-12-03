@@ -207,6 +207,8 @@ td img {
 .video {
   justify-self: center;
   padding-left: 1em;
+  width : 800px;
+  height : 450px; 
 }
 
 
@@ -310,6 +312,7 @@ cursor: pointer;
 
   h5 {
     column-count: 1;
+    padding: 0em 1em 0em 1em;
 }
 
 .wonder{
@@ -392,4 +395,9 @@ h3{
       margin: 0 0 1em 0;
       width: 45vw;
       height: auto;
+}
+
+.video{
+  height: auto ;
+  width: 450px;
 }
