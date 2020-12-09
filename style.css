@@ -297,6 +297,15 @@ text-decoration: none;
 cursor: pointer;
 }
 
+.contributeur{
+  column-count: 2;
+    padding: 2em 20em 5em 2em;
+    font-family: 'helvetica';
+  color: rgb(111, 1, 255);
+  font-size: 1.5em;
+  text-indent: 3em;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
 .modal-content {
