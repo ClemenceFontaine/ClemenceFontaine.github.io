@@ -53,7 +53,7 @@ h2 {
 }
 
 h3 {
-  color: orangered;
+  color: black;
   /*text-shadow: 1.5px 1.5px 1.5px green;*/
   font-size: 3.5em;
   line-height: 1.25em;
@@ -64,14 +64,14 @@ h3 {
 }
 
 h3:hover{
-  color: black;
+  color: rgb(111, 1, 255);
 }
 
 /* retour */
 h4{
   font-family: 'helvetica';
   font-style: normal;
-  color: orangered;
+  color: black;
   font-size: 3em;
   text-align: right;
   padding-right: 2em;
@@ -80,7 +80,7 @@ h4{
 /* légende */
 h5{
   font-family: 'helvetica';
-  color: orangered;
+  color: rgb(111, 1, 255);
   font-size: 1.5em;
   text-align: left;
   padding: 0em 45em 0em 1em;
@@ -91,7 +91,7 @@ h4:hover{
 
 .wonder{
   font-family: 'wondertype';
-  color: orangered;
+  color: black;
   font-size: 8em;
   text-align: left;
   padding: 1em 3em 1em 1em;
@@ -99,7 +99,7 @@ h4:hover{
 
 .typerabelle{
   font-family: 'typerabelle';
-  color: orangered;
+  color: black;
   font-size: 12em;
   text-align: left;
   padding: 0em 0em 0em 0em;
@@ -110,12 +110,18 @@ h4:hover{
   flex-direction: row;
   height: 100%;
   width: 100vw;
+  color: black;
 }
 
 a:link 
 { 
- text-decoration:none; 
+ text-decoration:none;
+ color: black; 
 } 
+
+a:visited {
+  color: black;
+  }
 
 .intro {
   flex: auto;
@@ -123,7 +129,7 @@ a:link
   height: 100vh;
   overflow-y: scroll;
   padding: 1em 2em 1em 2em;
-  background-color: orangered;
+  background-color: rgb(111, 1, 255);
 }
 
 .taffe a span {
@@ -137,7 +143,7 @@ a:link
 
   table {
     border-collapse: collapse;
-    color: orangered;
+    color: rgb(111, 1, 255);;
     box-sizing: border-box;
     width: 90%;
   }
@@ -152,12 +158,12 @@ td {
 }
 
 th {
-  color: orangered;
+  color: rgb(111, 1, 255);
   font-family: 'helvetica';
   text-align: left ;
   font-size: 1.5em;
   font-style: bold;
-  border: 2px orangered;
+  border: 2px rgb(111, 1, 255);
   border-style: none;
   padding: 5px;
 }
@@ -196,7 +202,7 @@ td img {
 }
 
 .projet:hover {
-  color: orangered;
+  color: rgb(111, 1, 255);
 }
 
 #whitespace {
@@ -208,7 +214,7 @@ td img {
   justify-self: center;
   padding-left: 1em;
   width : 800px;
-  height : 450px; 
+  height : 450px;
 }
 
 
@@ -226,7 +232,7 @@ td img {
   width: auto;
   height: 30vh;
   max-height: 100%;
-  border: 1px dotted orangered;
+  border: 1px dotted rgb(111, 1, 255);
   -webkit-filter: blur(0);
 	filter: blur(0);
 }
@@ -246,7 +252,7 @@ div.tableau::-webkit-scrollbar {
 
 div.intro::-webkit-scrollbar-thumb,
 div.tableau::-webkit-scrollbar-thumb {
-  background-color: orangered;
+  background-color: rgba(0, 0, 0, 0.466);
 }
 
 
@@ -376,18 +382,14 @@ cursor: pointer;
 
 @media only screen and (max-width: 600px)  {
   h1{
-    color: orangered;
     font-size: 3em;
   } 
   h2 {
-     color: orangered;
       column-count: 1;
        padding-bottom: 0;
        font-size: 1.5em;
 }
-.intro{
-  background-color: white;
-}
+
 h3{
   font-size: 3em;
 }
