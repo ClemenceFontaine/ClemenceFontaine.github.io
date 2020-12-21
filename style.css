@@ -387,6 +387,10 @@ cursor: pointer;
   }
 
 }
+.contributeur{
+  column-count: 2;
+    padding: 2em 2em 5em 2em;
+}
 
 
 @media only screen and (max-width: 600px)  {
@@ -415,4 +419,5 @@ h3{
 .contributeur{
   column-count: 1;
     padding: 2em 2em 5em 2em;
+}
 }
