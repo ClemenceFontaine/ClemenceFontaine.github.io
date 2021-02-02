@@ -77,6 +77,10 @@ h4{
   padding-right: 2em;
 }
 
+h4:hover{
+  text-decoration: underline;
+}
+
 /* légende */
 h5{
   font-family: 'helvetica';
@@ -85,8 +89,21 @@ h5{
   text-align: left;
   padding: 0em 45em 0em 1em;
 }
-h4:hover{
-  text-decoration: underline;
+
+h6{
+  font-family: 'helvetica';
+  color: white;
+  background-color: rgb(111, 1, 255);
+  font-size: 2em;
+  text-align: right;
+  width:150px;
+  line-height:50px;
+  text-align:center;
+  border-radius: 50px;
+  text-decoration:none;
+}
+.bouton{
+  padding : 2em 2em;
 }
 
 .wonder{
@@ -210,6 +227,7 @@ td img {
   background-color: none;
 }
 
+
 .video {
   justify-self: center;
   padding-left: 1em;
@@ -220,7 +238,7 @@ td img {
 
  
 .photo {
-  display: run-in;
+  display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1em 1em 1em 1em;
@@ -369,7 +387,7 @@ cursor: pointer;
 
   .photo {
       padding: 1em;
-      display: flex;
+      display: block;
       flex-direction: row;
       flex-wrap: wrap;
           justify-content: space-between;
@@ -378,8 +396,9 @@ cursor: pointer;
 
   .photo img {
       margin: 0 0 1.5em 0;
-      width: 30vw;
-      height: auto;
+      width: auto;
+      height: 30vh;
+  max-height: 100%;
   }
 
   th {
@@ -408,8 +427,10 @@ h3{
 }
     .photo img {
       margin: 0 0 1em 0;
-      width: 45vw;
-      height: auto;
+      width: auto;
+      height: 30vh;
+  max-height: 100%;
+
 }
 
 .video{
