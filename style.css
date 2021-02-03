@@ -396,9 +396,8 @@ cursor: pointer;
 
   .photo img {
       margin: 0 0 1.5em 0;
-      width: auto;
-      height: 30vh;
-  max-height: 100%;
+        width: 30vw;
+        height: auto;
   }
 
   th {
@@ -427,10 +426,8 @@ h3{
 }
     .photo img {
       margin: 0 0 1em 0;
-      width: auto;
-      height: 30vh;
-  max-height: 100%;
-
+        width: 45vw;
+        height: auto;
 }
 
 .video{
