@@ -5,13 +5,20 @@
 }
 
 @font-face {
-    font-family: "fleishmanitalic";
-    src: url("./font/DTLFleischmannST\ Italic.ttf");
+    font-family: 'fleishmanitalic';
+    src: url('./font/DTLFleischmannST\ Italic.ttf');
+    src: url('./font/dtlfleischmannst_italic-webfont.woff2') format('woff2'), url('./font/dtlfleischmannst_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    ;
 }
 
 @font-face {
-    font-family: "fleishman";
-    src: url("./font/DTL\ Fleischmann\ ST\ Regular.otf");
+    font-family: 'fleishman';
+    src: url('./font/DTL/Fleischmann\ ST\ Regular.otf');
+    src: url('./font/dtl_fleischmann_st_regular-webfont.woff2') format('woff2'), url('./font/dtl_fleischmann_st_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
