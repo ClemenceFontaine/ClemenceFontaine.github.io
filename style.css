@@ -64,7 +64,7 @@ h3 {
 }
 
 h3:hover {
-    text-shadow: 5px 5px 5px rgb(136, 184, 113);
+    text-shadow: 5px 5px 5px rgb(120, 113, 184);
 }
 
 
@@ -90,7 +90,7 @@ h4:hover {
 h5 {
     font-family: 'fleishman';
     font-weight: lighter;
-    color: rgb(136, 184, 113);
+    color: rgb(120, 113, 184);
     font-size: 1.5em;
     text-align: left;
     padding: 0em 45em 0em 1em;
@@ -100,7 +100,7 @@ h6 {
     font-family: 'fleishman';
     font-weight: lighter;
     color: white;
-    background-color: rgb(136, 184, 113);
+    background-color: rgb(120, 113, 184);
     font-size: 2em;
     text-align: right;
     width: 150px;
@@ -143,7 +143,7 @@ a:visited {
     height: 100vh;
     overflow-y: scroll;
     padding: 1em 2em 1em 2em;
-    background-color: rgb(136, 184, 113);
+    background-color: rgb(120, 113, 184);
 }
 
 .taffe a span {
@@ -157,7 +157,7 @@ a:visited {
 
 table {
     border-collapse: collapse;
-    color: rgb(136, 184, 113);
+    color: rgb(120, 113, 184);
     ;
     box-sizing: border-box;
     width: 90%;
@@ -172,12 +172,12 @@ td {
 }
 
 th {
-    color: rgb(136, 184, 113);
+    color: rgb(120, 113, 184);
     font-family: 'fleishman';
     text-align: left;
     font-size: 1.5em;
     font-style: bold;
-    border: 2px rgb(136, 184, 113);
+    border: 2px rgb(120, 113, 184);
     border-style: none;
     padding: 5px;
 }
@@ -216,7 +216,7 @@ td img {
 }
 
 .projet:hover {
-    color: rgb(136, 184, 113);
+    color: rgb(120, 113, 184);
 }
 
 #whitespace {
@@ -245,7 +245,7 @@ td img {
     width: auto;
     height: 30vh;
     max-height: 100%;
-    border: 1px dotted rgb(136, 184, 113);
+    border: 1px dotted rgb(120, 113, 184);
     -webkit-filter: blur(0);
     filter: blur(0);
 }
@@ -327,7 +327,7 @@ div.tableau::-webkit-scrollbar-thumb {
     column-count: 2;
     padding: 2em 20em 5em 2em;
     font-family: 'fleishman';
-    color: rgb(136, 184, 113);
+    color: rgb(120, 113, 184);
     font-size: 1.5em;
     text-indent: 3em;
 }
